@@ -1,12 +1,11 @@
 # 电商订单数据集分析
 
 > 基于 Kaggle 公开数据集《E-Commerce Orders Dataset 2026》的端到端电商经营分析：
-> **数据清洗 → 特征工程 → 探索性分析（EDA）→ 基线建模**，全部过程保留在可复现的 Jupyter Notebook 中。
+> **数据清洗 → 特征工程 → 探索性分析（EDA）→ 业务行动建议**，全部过程保留在可复现的 Jupyter Notebook 中。
 
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-2.x-150458?logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-F7931E?logo=scikitlearn&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 
 ---
 
@@ -75,15 +74,12 @@ flowchart LR
     C --> D["28,953 × 61<br/>清洗后数据"]
     D --> E["02 探索性分析<br/>25 个章节"]
     E --> F["业务结论<br/>+ 行动建议"]
-    A --> G["03 基线建模<br/>随机森林分类 / 回归"]
-    G --> F
 ```
 
 | 阶段 | Notebook | 产出 |
 | --- | --- | --- |
 | 数据清洗与预处理 | [notebooks/01_data_cleaning.ipynb](notebooks/01_data_cleaning.ipynb) | `ecommerce_orders_cleaned.csv`、`cleaning_log.csv` |
 | 探索性分析 | [notebooks/02_eda_analysis.ipynb](notebooks/02_eda_analysis.ipynb) | 25 章分析报告 + 24 张图表 + 管理层摘要 |
-| 基线建模 | [notebooks/03_baseline_models.ipynb](notebooks/03_baseline_models.ipynb) | 高价值订单分类、订单金额回归基线 |
 
 ---
 
@@ -99,12 +95,10 @@ flowchart LR
 │   └── ecommerce_orders_cleaned.csv     # 清洗产物（不入库，运行 01 生成）
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb     # 清洗 + 特征工程
-│   ├── 02_eda_analysis.ipynb      # 探索性分析（25 章）
-│   └── 03_baseline_models.ipynb   # 基线机器学习模型
+│   └── 02_eda_analysis.ipynb      # 探索性分析（25 章）
 ├── images/                        # README 与报告用图
 ├── .gitattributes
 ├── .gitignore
-├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
@@ -159,7 +153,6 @@ pip install -r requirements.txt
 ```text
 notebooks/01_data_cleaning.ipynb    → 生成 data/ecommerce_orders_cleaned.csv
 notebooks/02_eda_analysis.ipynb     → 读取清洗后数据，产出全部分析结论
-notebooks/03_baseline_models.ipynb  → 基线模型（可直接读原始数据）
 ```
 
 在仓库根目录启动 Jupyter：
@@ -207,9 +200,9 @@ sudo apt-get install fonts-noto-cjk
 
 ---
 
-## 十、许可证与致谢
+## 十、致谢与使用说明
 
-- 代码与文档：[MIT License](LICENSE)
-- 数据集：Kaggle 公开数据集《E-Commerce Orders Dataset 2026》，版权归原始发布方所有，使用请遵守其页面条款。
+- **代码与文档**：本仓库未附加开源许可证，默认保留所有权利（All rights reserved）。如需转载、衍生或商用，请先联系作者获取授权。
+- **数据集**：[E-Commerce Orders Dataset 2026](https://www.kaggle.com/datasets/mmumairkhattak/e-commerce-orders-dataset-2026-scra)，版权归原始发布方所有，使用请遵守其页面条款。
 
 如果这个项目对你有帮助，欢迎 Star ⭐
