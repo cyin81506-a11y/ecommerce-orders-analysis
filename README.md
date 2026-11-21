@@ -128,8 +128,8 @@ flowchart LR
 ### 1. 克隆仓库
 
 ```bash
-git clone <your-repo-url>
-cd 电商订单项目分析
+git clone https://github.com/cyin81506-a11y/A.git
+cd A
 ```
 
 ### 2. 准备数据
