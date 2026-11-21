@@ -1,0 +1,35 @@
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Notebook ----------
+.ipynb_checkpoints/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# ---------- 数据文件（原始与清洗产物不入库，见 data/README.md） ----------
+data/*.csv
+!data/data_dictionary.csv
+!data/cleaning_log.csv
+
+# ---------- 输出与临时文件 ----------
+outputs/
+*.log
+~$*
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

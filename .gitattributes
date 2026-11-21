@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+*.ipynb diff=jupyternotebook
+*.csv text eol=lf
+*.png binary
+*.jpg binary
